@@ -25,4 +25,9 @@ public class AbsolutelySimpleTest {
     public void testIsProductPositive(int a, int b, boolean expectedResult) {
         Assert.assertEquals(sut.isProductPositive(a, b), expectedResult);
     }
+
+    @Test
+    public void iTestNothing() {
+        sut.isProductPositive(-1, 0);
+    }
 }

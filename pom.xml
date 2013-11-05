@@ -21,4 +21,22 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>0.31</version>
+                <configuration>
+                    <targetClasses>
+                        <param>org.dzakub.mutants.*</param>
+                    </targetClasses>
+                    <targetTests>
+                        <param>org.dzakub.mutants.*</param>
+                    </targetTests>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
